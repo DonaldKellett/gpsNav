@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+	gpsNav - A Project by Donald Leung
+	This document is just an example to show how the app works.
+	(c) Donald Leung.  All rights reserved.
+-->
+<html>
+	<head>
+		<title>gpsNav - A Project by Donald Leung</title>
+		<link rel="stylesheet" type="text/css" href="gpsNav.css" />
+	</head>
+	<body>
+		<h2>gpsNav App Demo Page</h2>
+		<p>This page is to show how the app can be used.  Before using the app, the following HTML must be pasted somewhere on your webpage/app:</p>
+		<pre><code>&lt;img src="placeholder.jpg" id="map" /&gt;
+&lt;p&gt;&lt;span id="error"&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
+		<p>The following link to the script must also be pasted:</p>
+		<pre><code>&lt;script src="gpsNav.js"&gt;&lt;/script&gt;</code></pre>
+		<p>To initialize/activate the app, simply paste this script after <code>gpsNav.js</code>:</p>
+		<pre><code>&lt;script&gt;gpsNav.init();&lt;/script&gt;</code></pre>
+		<p>If you want to add your own custom settings (such as changing the size of the map), please read <code>README.md</code> to learn more.</p>
+		<h3>GPS Tracking</h3>
+		<p>Feel free to use the GPS Navigation below!</p>
+		<img src="placeholder.jpg" id="map" />
+		<p><span id="error"></span></p>
+		<!-- gpsNav Script -->
+		<script src="gpsNav.js"></script>
+		<script>
+		/* Example initialization method */
+
+		// Basic (no settings)
+
+		gpsNav.init();
+
+		// Advanced (with all settings) - uncomment the code to see it work!
+
+		/*
+
+		gpsNav.init({
+			zoom: 17,
+			width: 800,
+			height: 600,
+			error: {
+				permissionDenied: {
+					image: "permissionDenied.jpg",
+					text: "Come on, I won't use your information!"
+				},
+				positionUnavailable: {
+					image: "positionUnavailable.jpg",
+					text: "Oh, that sucks!  Are you lost?"
+				},
+				timeout: {
+					image: "timeout.gif",
+					text: "Oh, I'm really sorry.  It seems your position has timed out."
+				},
+				unknownError: {
+					image: "unknownError.png",
+					text: "Sorry, I don't know what happened to the app or your computer.  Chances are that the problem is in your computer (haha!*).  *Sorry, that was a bit rude."
+				}
+			}
+		});
+		
+		*/
+		</script>
+	</body>
+</html>
