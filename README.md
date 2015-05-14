@@ -2,6 +2,17 @@
 
 A *customizable* app that acts as an online GPS tracking device.
 
+## Package
+
+This package includes the app (of course, this is the main file of the whole repo!), along with a few important files that *should not be deleted*:
+
+ - gpsNav.js (Readable version of the app - you can delete this if you are not a developer and simply want to use gpsNav.min.js)
+ - gpsNav.min.js (Minified version of the app - DO NOT DELETE)
+ - gpsNav.css (Just some default styling for the error message in case Geolocation fails - do not delete unless you want to re-style your error message)
+ - error.png (The default image that displays when Geolocation fails - you can replace this image with another image of the same name and file extension, but do NOT delete this image if you do not have a substitute image)
+
+This package also includes a number of less important images (for demo purposes) and a demo HTML file with the most basic instructions.  However, do not rely on index.html for the instructions - please read this instead for full details on how to use this app.
+
 ## Initializing gpsNav
 
 To initialize gpsNav on your website or app, simply follow the instructions below:
@@ -20,8 +31,10 @@ The placeholder.jpg image is simply a placeholder image that displays in case th
 Of course, to use the application, you must add these "script" tags somewhere in your document.
 
 ```html
-<script src="gpsNav.js"></script>
+<script src="gpsNav.min.js"></script>
 ```
+
+Note: gpsNav.min.js can be replaced with gpsNav.js if you decide to use the (full) file with comments instead.
 
 3. Initialize the app
 
