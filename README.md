@@ -2,6 +2,10 @@
 
 A *customizable* app that acts as an online GPS tracking device.
 
+*Note: Newer versions of this app are now available.  Below are the list of newer versions of gpsNav:*
+
+1. [gpsNav - v2](https://github.com/DonaldKellett/gpsNav-v2)
+
 ## Package
 
 This package includes the app (of course, this is the main file of the whole repo!), along with a few important files that *should not be deleted*:
